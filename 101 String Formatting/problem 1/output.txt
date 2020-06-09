@@ -1,0 +1,5 @@
+      Time:     # s
+     Speed:     #.## m/s
+      Fuel:     #.## L
+X Position:     # m
+Y Position:     # m
