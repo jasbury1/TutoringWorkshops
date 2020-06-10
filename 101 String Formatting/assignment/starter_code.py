@@ -5,6 +5,10 @@
 #   - If the word begins with a vowel, it is ignored
 #   - After moving (or not moving) the letters, "ay" is added to the end of the 
 #     word.
+# Examples:
+#   - fix => ixfay
+#   - smile => ilesmay
+#   - omlet => omletay
 
 vowels = list("aeiouAEIOU")
 
@@ -18,7 +22,7 @@ def convert_word_pig_latin(word):
     pass
 
 if __name__ == "__main__":
-    input_string = "Python String Formatting is fun!"
+    input_string = "Python String Formatting is fun"
 
     pig_latin_string = convert_line_pig_latin(input_string)
 

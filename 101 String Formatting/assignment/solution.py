@@ -28,6 +28,30 @@ def convert_word_pig_latin(word):
 
     return word[i:] + word[:i] + "ay"
 
+def convert_word_pig_latin_to(word):
+    # Given a word of type String, return the word translated to pig latin
+    # Alternate method that does not use string splicing
+    found_vowel = False
+    before_vowel = ""
+    vowel_and_after = ""
+
+    for letter in word:
+        if letter in vowels:
+            found_vowel = True
+
+        if found_vowel:
+            vowel_and_after += letter
+        else:
+            before_vowel += letter
+
+    return vowel_and_after + before_vowel + "ay" 
+
+    while i < len(word) and not word[i] in vowels:
+        constinants += word[i]
+        i += 1
+
+    return 
+
 if __name__ == "__main__":
     input_string = "Python String Formatting is fun"
 
